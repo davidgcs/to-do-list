@@ -1,0 +1,8 @@
+<h1>TO DO LIST</h1>
+
+@for (elem of data; track $index) {
+    <div class="todo-item" d-flex (click)="markAsDone(elem.id)">
+        <div class="circle"></div>
+        <div class="name">{{elem.todo}}</div>
+    </div>
+}
